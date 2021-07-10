@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4500DD0B26969786006C3496 /* SongsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4500DD0A26969786006C3496 /* SongsModel.swift */; };
+		45521FB3269976D300A71922 /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45521FB2269976D300A71922 /* SongViewModel.swift */; };
+		45521FB62699882000A71922 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45521FB52699882000A71922 /* SongTableViewCell.swift */; };
+		45521FBA26998DB300A71922 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45521FB926998DB300A71922 /* SongTableViewCell.xib */; };
 		4565160526948921002D5CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565160426948921002D5CF8 /* AppDelegate.swift */; };
 		4565160726948921002D5CF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565160626948921002D5CF8 /* SceneDelegate.swift */; };
 		4565160926948921002D5CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565160826948921002D5CF8 /* ViewController.swift */; };
@@ -15,6 +19,11 @@
 		4565161126948923002D5CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4565160F26948923002D5CF8 /* LaunchScreen.storyboard */; };
 		4565161C26948923002D5CF8 /* CrownStack_abhinavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565161B26948923002D5CF8 /* CrownStack_abhinavTests.swift */; };
 		4565162726948923002D5CF8 /* CrownStack_abhinavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565162626948923002D5CF8 /* CrownStack_abhinavUITests.swift */; };
+		4565163626948BAA002D5CF8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565163526948BAA002D5CF8 /* Common.swift */; };
+		4565163926948C0E002D5CF8 /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4565163826948C0E002D5CF8 /* HttpUtility.swift */; };
+		799463D513715A4167D6194D /* Pods_CrownStack_abhinav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8853C62F3353746D43208FDA /* Pods_CrownStack_abhinav.framework */; };
+		DB25ED9CBF1CEDC3BDF9589D /* Pods_CrownStack_abhinav_CrownStack_abhinavUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85243DD1848BA1162629979 /* Pods_CrownStack_abhinav_CrownStack_abhinavUITests.framework */; };
+		E4F17ADFD815FC4E6D510AEE /* Pods_CrownStack_abhinavTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2988EEEA554529919AFFF91B /* Pods_CrownStack_abhinavTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03DF06B2DDE84650C4AA8E8B /* Pods-CrownStack_abhinav-CrownStack_abhinavUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownStack_abhinav-CrownStack_abhinavUITests.debug.xcconfig"; path = "Target Support Files/Pods-CrownStack_abhinav-CrownStack_abhinavUITests/Pods-CrownStack_abhinav-CrownStack_abhinavUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2988EEEA554529919AFFF91B /* Pods_CrownStack_abhinavTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrownStack_abhinavTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D49765618349896912AB3DE /* Pods-CrownStack_abhinav-CrownStack_abhinavUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownStack_abhinav-CrownStack_abhinavUITests.release.xcconfig"; path = "Target Support Files/Pods-CrownStack_abhinav-CrownStack_abhinavUITests/Pods-CrownStack_abhinav-CrownStack_abhinavUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36D7D9063A053049C2A64EBA /* Pods-CrownStack_abhinavTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownStack_abhinavTests.release.xcconfig"; path = "Target Support Files/Pods-CrownStack_abhinavTests/Pods-CrownStack_abhinavTests.release.xcconfig"; sourceTree = "<group>"; };
+		4500DD0A26969786006C3496 /* SongsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsModel.swift; sourceTree = "<group>"; };
+		45521FAD269936CF00A71922 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/SwiftyJSON-fqbcfpuxanvjdtcyptinxrreqwhz/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		45521FB2269976D300A71922 /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		45521FB52699882000A71922 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		45521FB926998DB300A71922 /* SongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
 		4565160126948921002D5CF8 /* CrownStack_abhinav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrownStack_abhinav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4565160426948921002D5CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4565160626948921002D5CF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,13 @@
 		4565162226948923002D5CF8 /* CrownStack_abhinavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrownStack_abhinavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4565162626948923002D5CF8 /* CrownStack_abhinavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrownStack_abhinavUITests.swift; sourceTree = "<group>"; };
 		4565162826948923002D5CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4565163526948BAA002D5CF8 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		4565163826948C0E002D5CF8 /* HttpUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		47D5C197F7754091585129A3 /* Pods-CrownStack_abhinavTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownStack_abhinavTests.debug.xcconfig"; path = "Target Support Files/Pods-CrownStack_abhinavTests/Pods-CrownStack_abhinavTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8853C62F3353746D43208FDA /* Pods_CrownStack_abhinav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrownStack_abhinav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5C3097C54252B6B89A846A /* Pods-CrownStack_abhinav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownStack_abhinav.debug.xcconfig"; path = "Target Support Files/Pods-CrownStack_abhinav/Pods-CrownStack_abhinav.debug.xcconfig"; sourceTree = "<group>"; };
+		DC30E5253737DD8EB1A5C2DA /* Pods-CrownStack_abhinav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrownStack_abhinav.release.xcconfig"; path = "Target Support Files/Pods-CrownStack_abhinav/Pods-CrownStack_abhinav.release.xcconfig"; sourceTree = "<group>"; };
+		F85243DD1848BA1162629979 /* Pods_CrownStack_abhinav_CrownStack_abhinavUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrownStack_abhinav_CrownStack_abhinavUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799463D513715A4167D6194D /* Pods_CrownStack_abhinav.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F17ADFD815FC4E6D510AEE /* Pods_CrownStack_abhinavTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +97,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB25ED9CBF1CEDC3BDF9589D /* Pods_CrownStack_abhinav_CrownStack_abhinavUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4500DD092696975F006C3496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4500DD0A26969786006C3496 /* SongsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45521FAC269936CF00A71922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45521FAD269936CF00A71922 /* SwiftyJSON.framework */,
+				8853C62F3353746D43208FDA /* Pods_CrownStack_abhinav.framework */,
+				F85243DD1848BA1162629979 /* Pods_CrownStack_abhinav_CrownStack_abhinavUITests.framework */,
+				2988EEEA554529919AFFF91B /* Pods_CrownStack_abhinavTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45521FB12699768400A71922 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45521FB2269976D300A71922 /* SongViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45521FB4269987F500A71922 /* TabelViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				45521FB52699882000A71922 /* SongTableViewCell.swift */,
+				45521FB926998DB300A71922 /* SongTableViewCell.xib */,
+			);
+			path = TabelViewCell;
+			sourceTree = "<group>";
+		};
 		456515F826948921002D5CF8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +147,8 @@
 				4565161A26948923002D5CF8 /* CrownStack_abhinavTests */,
 				4565162526948923002D5CF8 /* CrownStack_abhinavUITests */,
 				4565160226948921002D5CF8 /* Products */,
+				45521FAC269936CF00A71922 /* Frameworks */,
+				AFE1CCD224005FA099D96AAF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +165,11 @@
 		4565160326948921002D5CF8 /* CrownStack_abhinav */ = {
 			isa = PBXGroup;
 			children = (
+				45521FB4269987F500A71922 /* TabelViewCell */,
+				45521FB12699768400A71922 /* ViewModel */,
+				4500DD092696975F006C3496 /* Model */,
+				4565163726948BFA002D5CF8 /* Services */,
+				4565163426948B8C002D5CF8 /* Common */,
 				4565160426948921002D5CF8 /* AppDelegate.swift */,
 				4565160626948921002D5CF8 /* SceneDelegate.swift */,
 				4565160826948921002D5CF8 /* ViewController.swift */,
@@ -128,6 +199,36 @@
 			path = CrownStack_abhinavUITests;
 			sourceTree = "<group>";
 		};
+		4565163426948B8C002D5CF8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4565163526948BAA002D5CF8 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4565163726948BFA002D5CF8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4565163826948C0E002D5CF8 /* HttpUtility.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFE1CCD224005FA099D96AAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE5C3097C54252B6B89A846A /* Pods-CrownStack_abhinav.debug.xcconfig */,
+				DC30E5253737DD8EB1A5C2DA /* Pods-CrownStack_abhinav.release.xcconfig */,
+				03DF06B2DDE84650C4AA8E8B /* Pods-CrownStack_abhinav-CrownStack_abhinavUITests.debug.xcconfig */,
+				2D49765618349896912AB3DE /* Pods-CrownStack_abhinav-CrownStack_abhinavUITests.release.xcconfig */,
+				47D5C197F7754091585129A3 /* Pods-CrownStack_abhinavTests.debug.xcconfig */,
+				36D7D9063A053049C2A64EBA /* Pods-CrownStack_abhinavTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4565162B26948923002D5CF8 /* Build configuration list for PBXNativeTarget "CrownStack_abhinav" */;
 			buildPhases = (
+				032367BEC0226FDDD0A35B40 /* [CP] Check Pods Manifest.lock */,
 				456515FD26948921002D5CF8 /* Sources */,
 				456515FE26948921002D5CF8 /* Frameworks */,
 				456515FF26948921002D5CF8 /* Resources */,
+				0D5B79C9EF25FE782015020F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4565162E26948923002D5CF8 /* Build configuration list for PBXNativeTarget "CrownStack_abhinavTests" */;
 			buildPhases = (
+				A9D33A314242090EE8AE149D /* [CP] Check Pods Manifest.lock */,
 				4565161326948923002D5CF8 /* Sources */,
 				4565161426948923002D5CF8 /* Frameworks */,
 				4565161526948923002D5CF8 /* Resources */,
@@ -170,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4565163126948923002D5CF8 /* Build configuration list for PBXNativeTarget "CrownStack_abhinavUITests" */;
 			buildPhases = (
+				8BC22DE8E9F8F545F5A5CB44 /* [CP] Check Pods Manifest.lock */,
 				4565161E26948923002D5CF8 /* Sources */,
 				4565161F26948923002D5CF8 /* Frameworks */,
 				4565162026948923002D5CF8 /* Resources */,
+				5CDBCF93D49D545704814924 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45521FBA26998DB300A71922 /* SongTableViewCell.xib in Resources */,
 				4565161126948923002D5CF8 /* LaunchScreen.storyboard in Resources */,
 				4565160E26948923002D5CF8 /* Assets.xcassets in Resources */,
 				4565160C26948921002D5CF8 /* Main.storyboard in Resources */,
@@ -253,11 +360,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		032367BEC0226FDDD0A35B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrownStack_abhinav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D5B79C9EF25FE782015020F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrownStack_abhinav/Pods-CrownStack_abhinav-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrownStack_abhinav/Pods-CrownStack_abhinav-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrownStack_abhinav/Pods-CrownStack_abhinav-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CDBCF93D49D545704814924 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrownStack_abhinav-CrownStack_abhinavUITests/Pods-CrownStack_abhinav-CrownStack_abhinavUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrownStack_abhinav-CrownStack_abhinavUITests/Pods-CrownStack_abhinav-CrownStack_abhinavUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrownStack_abhinav-CrownStack_abhinavUITests/Pods-CrownStack_abhinav-CrownStack_abhinavUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC22DE8E9F8F545F5A5CB44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrownStack_abhinav-CrownStack_abhinavUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D33A314242090EE8AE149D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrownStack_abhinavTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		456515FD26948921002D5CF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45521FB3269976D300A71922 /* SongViewModel.swift in Sources */,
+				4565163926948C0E002D5CF8 /* HttpUtility.swift in Sources */,
+				4565163626948BAA002D5CF8 /* Common.swift in Sources */,
+				4500DD0B26969786006C3496 /* SongsModel.swift in Sources */,
+				45521FB62699882000A71922 /* SongTableViewCell.swift in Sources */,
 				4565160926948921002D5CF8 /* ViewController.swift in Sources */,
 				4565160526948921002D5CF8 /* AppDelegate.swift in Sources */,
 				4565160726948921002D5CF8 /* SceneDelegate.swift in Sources */,
@@ -433,6 +648,7 @@
 		};
 		4565162C26948923002D5CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5C3097C54252B6B89A846A /* Pods-CrownStack_abhinav.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +668,7 @@
 		};
 		4565162D26948923002D5CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC30E5253737DD8EB1A5C2DA /* Pods-CrownStack_abhinav.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +688,7 @@
 		};
 		4565162F26948923002D5CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D5C197F7754091585129A3 /* Pods-CrownStack_abhinavTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +711,7 @@
 		};
 		4565163026948923002D5CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D7D9063A053049C2A64EBA /* Pods-CrownStack_abhinavTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +734,7 @@
 		};
 		4565163226948923002D5CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DF06B2DDE84650C4AA8E8B /* Pods-CrownStack_abhinav-CrownStack_abhinavUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +755,7 @@
 		};
 		4565163326948923002D5CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D49765618349896912AB3DE /* Pods-CrownStack_abhinav-CrownStack_abhinavUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
