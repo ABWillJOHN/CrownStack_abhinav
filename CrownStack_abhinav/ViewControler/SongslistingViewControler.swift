@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: BaseViewControler {
+class SongslistingViewControler: BaseViewControler {
 
     @IBOutlet weak var activityIndecatoer: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
@@ -66,17 +66,21 @@ class ViewController: BaseViewControler {
         tableView.backgroundView = backgroundView
     }
 }
-extension ViewController:ResponceFromApi {
+extension SongslistingViewControler:ResponceFromApi {
     func didReceiveResponceFromApi(apiResponce: SongsModel?) {
         songsData = apiResponce
         activityIndecatoer.stopAnimating()
         refreshControl.endRefreshing()
     }
 }
-extension ViewController: UITableViewDelegate {
-    
+extension SongslistingViewControler: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let songDetilsViewController = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "SongDetilsViewController") as! SongDetilsViewController
+        songDetilsViewController.songDetail = songsData?.results[indexPath.row]
+        navigationController?.pushViewController(songDetilsViewController, animated: true)
+    }
 }
-extension ViewController: UITableViewDataSource {
+extension SongslistingViewControler: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songsData?.results.count ?? 0
     }
@@ -86,12 +90,5 @@ extension ViewController: UITableViewDataSource {
         cell.song = songsData?.results[indexPath.row]
         cell.setUpView()
         return cell
-    }
-}
-class BaseViewControler: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = ColorConstants.singleton.navigationColor
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: ColorConstants.singleton.navigationTitelColor]
     }
 }

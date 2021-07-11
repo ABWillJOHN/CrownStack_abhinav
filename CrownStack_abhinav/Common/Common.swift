@@ -8,10 +8,8 @@
 import Foundation
 import UIKit
 
-struct Constants {
-    static let ErrorAlertTitle = "Error"
-    static let OkAlertTitle = "Ok"
-    static let CancelAlertTitle = "Cancel"
+struct Constants :Decodable{
+    let ErrorAlertTitle:String
 }
 
 struct ApiEndpoints
@@ -21,7 +19,7 @@ struct ApiEndpoints
 
 final class ColorConstants {
     static let singleton = ColorConstants()
-    var navigationColor = UIColor(hexString: "#46FDFF")
+    var navigationColor = UIColor.black
     var navigationTitelColor = UIColor(hexString: "#FFFFFF")
     private init() {}
 }
@@ -44,3 +42,4 @@ extension UIColor {
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
 }
+

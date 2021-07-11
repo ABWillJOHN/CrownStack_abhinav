@@ -21,7 +21,10 @@ struct HttpUtility
                 }
                 catch let error{
                     debugPrint("error occured while decoding = \(error.localizedDescription)")
+                    completionHandler(nil)
                 }
+            }else{
+                completionHandler(nil)
             }
             
         }.resume()

@@ -7,17 +7,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "885C19E2-7CE3-4408-BBEA-524CB4708363"
+            uuid = "4154CDF4-B27F-4450-98B6-F76102BD4C9F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CrownStack_abhinav/ViewController.swift"
+            filePath = "CrownStack_abhinavTests/CrownStack_abhinavTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "test_HitApi_WithNilUrl_Returns_Error()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3DE9501-8991-4983-8DE0-FCF0DD54242B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrownStack_abhinav/Services/HttpUtility.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "getApiData(requestUrl:resultType:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3DE9501-8991-4983-8DE0-FCF0DD54242B - 98a944a9a44881d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CrownStack_abhinav.HttpUtility.getApiData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(requestUrl: Foundation.URL, resultType: &#x3c4;_0_0.Type, completionHandler: (Swift.Optional&lt;&#x3c4;_0_0&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CrownStack_abhinav"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhinav.prashar/Desktop/CrownStack_abhinav/CrownStack_abhinav/Services/HttpUtility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "D3DE9501-8991-4983-8DE0-FCF0DD54242B - 79e5da0f4172152a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CrownStack_abhinav.HttpUtility.getApiData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(requestUrl: Foundation.URL, resultType: &#x3c4;_0_0.Type, completionHandler: (Swift.Optional&lt;&#x3c4;_0_0&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CrownStack_abhinav"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhinav.prashar/Desktop/CrownStack_abhinav/CrownStack_abhinav/Services/HttpUtility.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEF120C9-3086-4001-8337-8F1A2AAFA07F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CrownStack_abhinav/Services/HttpUtility.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "getApiData(requestUrl:resultType:completionHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

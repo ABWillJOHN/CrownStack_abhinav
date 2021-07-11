@@ -11,20 +11,20 @@
         <!--SONGS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrownStack_abhinav" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SongslistingViewControler" customModule="CrownStack_abhinav" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Myj-k5-syI">
-                                <rect key="frame" x="167" y="435" width="80" height="80"/>
+                                <rect key="frame" x="167" y="347" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Zcr-2D-Eph"/>
                                     <constraint firstAttribute="width" constant="80" id="hPX-vR-CL9"/>
                                 </constraints>
                             </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-Jx-77h">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" systemColor="systemGreenColor"/>
                             </tableView>
@@ -55,7 +55,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JOF-Vp-uSr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vht-4r-9QA">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Vht-4r-9QA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -71,8 +72,69 @@
             </objects>
             <point key="canvasLocation" x="286.95652173913044" y="63.616071428571423"/>
         </scene>
+        <!--Song Detils View Controller-->
+        <scene sceneID="ahb-0N-3K6">
+            <objects>
+                <viewController storyboardIdentifier="SongDetilsViewController" id="9PH-cP-g8K" customClass="SongDetilsViewController" customModule="CrownStack_abhinav" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FkV-YB-Ves">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnb-5e-rja" customClass="CardView" customModule="CrownStack_abhinav" customModuleProvider="target">
+                                <rect key="frame" x="-8" y="59" width="430" height="867"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooq-f9-ZzA">
+                                        <rect key="frame" x="20" y="250" width="390" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="16"/>
+                                        <color key="textColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="m5F-8r-tSk">
+                                        <rect key="frame" x="115" y="30" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="m5F-8r-tSk" secondAttribute="height" id="AcE-up-gMu"/>
+                                            <constraint firstAttribute="height" constant="200" id="Bl1-AK-PBf"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="m5F-8r-tSk" firstAttribute="top" secondItem="nnb-5e-rja" secondAttribute="top" constant="30" id="53z-IR-pOv"/>
+                                    <constraint firstItem="ooq-f9-ZzA" firstAttribute="top" secondItem="m5F-8r-tSk" secondAttribute="bottom" constant="20" id="8PM-kq-ENq"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ooq-f9-ZzA" secondAttribute="bottom" constant="40" id="8ta-5y-vKq"/>
+                                    <constraint firstItem="ooq-f9-ZzA" firstAttribute="leading" secondItem="nnb-5e-rja" secondAttribute="leading" constant="20" id="Cew-Xn-imU"/>
+                                    <constraint firstAttribute="trailing" secondItem="ooq-f9-ZzA" secondAttribute="trailing" constant="20" id="OKC-7o-28V"/>
+                                    <constraint firstItem="m5F-8r-tSk" firstAttribute="centerX" secondItem="nnb-5e-rja" secondAttribute="centerX" id="Tbr-OO-Wee"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mgn-au-VMS"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nnb-5e-rja" firstAttribute="top" secondItem="mgn-au-VMS" secondAttribute="top" constant="15" id="5xy-1m-rW3"/>
+                            <constraint firstAttribute="bottom" secondItem="nnb-5e-rja" secondAttribute="bottom" constant="-30" id="DhM-hQ-P6w"/>
+                            <constraint firstItem="nnb-5e-rja" firstAttribute="leading" secondItem="FkV-YB-Ves" secondAttribute="leading" constant="-8" id="aUN-bD-Ina"/>
+                            <constraint firstAttribute="trailing" secondItem="nnb-5e-rja" secondAttribute="trailing" constant="-8" id="vcM-CQ-bQM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albamImage" destination="m5F-8r-tSk" id="dFr-oI-IfH"/>
+                        <outlet property="discrptiontext" destination="ooq-f9-ZzA" id="9BM-Y4-PFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1H-w9-ipf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037.68115942029" y="63.616071428571423"/>
+        </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="download" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

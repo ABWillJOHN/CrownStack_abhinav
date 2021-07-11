@@ -8,26 +8,46 @@
 import XCTest
 @testable import CrownStack_abhinav
 
-class CrownStack_abhinavTests: XCTestCase {
+class HttpUtilityIntegrationTest: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    func test_HitApi_WithInvalidUrl_Returns_Error(){
+        // ARRANGE
+        let handler = HttpUtility()
+        let loginExpectations = expectation(description: "test_HitApi_WithInvalidUrl_Returns_Error")
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        // ACT
+        handler.getApiData(requestUrl: URL(string: "https://official-joke-api.appspot.com/random_joke")!, resultType: SongsModel.self) { data in
+            XCTAssertNil(data)
+            loginExpectations.fulfill()
         }
+        waitForExpectations(timeout: 10, handler: nil)
     }
+    
+    
+    func test_HitApi_WithRightUrl_Returns_Error(){
+        // ARRANGE
+        let handler = HttpUtility()
+        let loginExpectations = expectation(description: "WithValidRequest_Returns_LoginData")
 
+        // ACT
+        handler.getApiData(requestUrl: URL(string: ApiEndpoints.songUrl)!, resultType: SongsModel.self) { data in
+            XCTAssertNotNil(data)
+            loginExpectations.fulfill()
+        }
+        waitForExpectations(timeout: 10, handler: nil)
+    }
+    
+    
+    func test_HitApi_WithNilUrl_Returns_Error(){
+        // ARRANGE
+        let handler = HttpUtility()
+        let loginExpectations = expectation(description: "WithValidRequest_Returns_LoginData")
+
+        // ACT
+        handler.getApiData(requestUrl: URL(string: "https://github.com/ABWillJOHN/CrownStack_abhinav")!, resultType: SongsModel.self) { data in
+            XCTAssertNil(data)
+            loginExpectations.fulfill()
+        }
+        waitForExpectations(timeout: 10, handler: nil)
+    }
 }
